@@ -175,704 +175,6 @@ div[data-ng-click]:focus{
   animation: fadeIn 0.5s;
 }
 
-.vn-app-message{
-
-	&--fixed{
-		position: fixed;
-		top: 100px;
-		z-index: 9999;
-		left: 50%;
-		margin-left: -200px;
-		width: 400px;
-		box-shadow: 0px 0px 10px rgba(0,0,0,.2);
-	}
-	&--static{
-		position: static;
-	}
-
-	&__text{
-		line-height: 26px;
-	}
-	&__button{
-
-	}
-	@media (max-width: @screen-xs){
-		left: 0;
-		margin-left: 6%;
-		width: 90%;
-
-		&__text{
-
-		}
-		&__button{
-
-		}
-	}
-}
-
-.th-dropdown {
-
-	.vn-placeholder {
-		margin-left: -10px;
-	}
-
-	.btn {
-		text-align: left;
-	}
-
-	&-toggle {
-		margin-left : 5px;
-		margin-top  : -3px;
-	}
-
-	.dropdown-toggle{
-		text-align: left;
-		text-transform: uppercase;
-	}
-}
-
-.th-dropdown.open {
-	button.btn-default.dropdown-toggle {
-		background: none;
-	}
-}
-
-.th-my-account,
-.th-checkout{
-
-  .list-group{
-	margin        : 10px 0px 10px 0px;
-	border-radius : 2px;
-	box-shadow    : 0px 3px 1px -2px rgba(0,0,0,0.1),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
-
-	.list-group-item{
-		background-color: @body-bg;
-		padding      : 20px;
-		margin-left  : 0;
-		margin-right : 0;
-		border       : 1px solid darken(@body-bg, 8%);
-		color        : @text-color;
-
-		[data-vn-address-display]{
-			cursor: default;
-		}
-
-		&.-clickable{
-			color: @link-color;
-
-			&:hover{
-				cursor: pointer;
-				background-color: darken(@body-bg, 4%);
-			}
-		}
-	}
-
-	  .panel-heading{
-		  border-bottom: 0;
-	  }
-
-		//For select lists
-		.list-group-item.-radio{
-
-	  &:hover{
-		cursor: pointer;
-		  background-color: darken(@body-bg, 4%);
-	  }
-
-			.row{
-				padding-left: 30px;
-			}
-
-			input{
-				display: none;
-
-				&:checked {
-					+ div {
-						&:before {
-							content     : '\f192';
-							font-family : 'FontAwesome';
-						}
-					}
-				}
-			}
-
-			> div{
-
-				&:before {
-					content        : '\f10c';
-					font-family    : 'FontAwesome';
-					font-size      : 16px;
-					display        : inline-block;
-					line-height    : 18px;
-					vertical-align : middle;
-					text-align     : center;
-					color          : #000;
-					margin-right   : 5px;
-					font-weight    : normal;
-					position       : absolute;
-					top            : 50%;
-					margin-top     : -9px;
-				}
-			}
-		}
-
-	}
-}
-
-.th-modal{
-	position: relative;
-
-	.th-modal__button{
-		font-size : 14px;
-		width     : 100%;
-		margin    : 5px 0;
-
-		&--primary{
-
-		}
-		&--secondary{
-
-		}
-	}
-
-	&__message{
-		font-size     : 14px;
-		margin-bottom : 5px;
-	}
-
-	&__body{
-		padding-top: 10px;
-	}
-
-	&__close{
-		position  : absolute;
-		top       : 7px;
-		right     : 10px;
-		z-index   : 1;
-		font-size : 22px;
-	}
-
-	.modal-header{
-		padding: 0px;
-	}
-	.modal-body{
-		padding: 25px 25px 10px 25px;
-	}
-	.modal-footer{
-		padding: 10px 20px;
-	}
-}
-
-.login-modal{
-	.modal-header{
-		text-align: center;
-
-		.close{
-			font-size: 30px;
-		}
-	}
-	.modal-dialog{
-		@media (min-width: @screen-sm){
-			width: 400px;
-		}
-	}
-	.modal-title{
-		font-size      : 28px;
-		text-transform : uppercase;
-	}
-	.modal-content{
-		-moz-box-shadow    : 0 3px 9px rgba(0, 0, 0, 0.2);
-		-webkit-box-shadow : 0 3px 9px rgba(0, 0, 0, 0.2);
-		box-shadow         : 0 3px 9px rgba(0, 0, 0, 0.2);
-	}
-	.th-login{
-		margin: 0px 15px 50px 15px;
-	}
-}
-
-.sign-up-modal{
-	.modal-header{
-		text-align: center;
-
-		.close{
-			font-size: 30px;
-		}
-	}
-	.modal-dialog{
-		@media (min-width: @screen-sm){
-			width: 500px;
-		}
-	}
-	.modal-title{
-		font-size      : 25px;
-		text-transform : uppercase;
-	}
-	.modal-content{
-		-moz-box-shadow    : 0 3px 9px rgba(0, 0, 0, 0.2);
-		-webkit-box-shadow : 0 3px 9px rgba(0, 0, 0, 0.2);
-		box-shadow         : 0 3px 9px rgba(0, 0, 0, 0.2);
-	}
-	.modal-footer{
-		margin  : 0;
-		padding : 15px 20px;
-
-		.btn{
-			font-size: 14px;
-		}
-
-		&-left{
-			margin: 0px;
-		}
-	}
-	.form-group{
-		position: relative;
-
-		label{
-			left: 0;
-		}
-	}
-	.vn-rating{
-		line-height   : 1.3;
-		font-size     : 16px;
-		margin-bottom : 20px;
-	}
-	.th-login{
-		margin: 25px 40px 50px 40px;
-
-		&__form{
-			margin: 0px;
-		}
-	}
-}
-
-.write-review-modal{
-	.modal-header{
-		text-align: center;
-
-		.close{
-			font-size: 30px;
-		}
-	}
-	.modal-dialog{
-		@media (min-width: @screen-sm){
-			width: 500px;
-		}
-	}
-	.modal-title{
-		font-size      : 20px;
-		line-height: 1.3;
-		text-transform : uppercase;
-	}
-	.modal-content{
-		-moz-box-shadow    : 0 3px 9px rgba(0, 0, 0, 0.2);
-		-webkit-box-shadow : 0 3px 9px rgba(0, 0, 0, 0.2);
-		box-shadow         : 0 3px 9px rgba(0, 0, 0, 0.2);
-	}
-	.modal-footer{
-		margin  : 0;
-		padding : 15px 20px;
-
-		.btn{
-			font-size: 14px;
-		}
-
-		&-left{
-			margin: 0px;
-		}
-	}
-	.form-group{
-		position: relative;
-
-		label{
-			left: 0;
-		}
-	}
-	.vn-rating{
-		line-height   : 1.3;
-		font-size     : 16px;
-		margin-bottom : 20px;
-	}
-}
-
-.th-my-account,
-.th-checkout,
-.th-checkout__thanks,
-.th-order-detail{
-
-	.panel{
-		margin        : 20px 0;
-		border        : 1px solid darken(@body-bg, 10%);
-		border-radius : 2px;
-		box-shadow    : 0px 3px 1px -2px rgba(0, 0, 0, 0.1), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-
-		&-heading{
-			font-weight    : 500;
-			font-size      : 18px;
-			padding        : 15px 20px;
-			border-bottom  : 1px solid darken(@body-bg, 8%);
-			background-color: darken(@body-bg, 4);
-			color: @headings-color;
-			margin: 0;
-		}
-
-		&-body{
-			padding: 20px;
-			margin: 0;
-			background-color: @body-bg;
-		}
-
-		&-footer{
-			background-color: darken(@body-bg, 4);
-			color: @text-color;
-			border-top  : 1px solid darken(@body-bg, 8%);
-		}
-	}
-}
-
-.vn-placeholder {
-	.transition-property(font-size top);
-	.transition-duration(.2s);
-	.transition-timing-function(ease);
-
-	position    : absolute;
-	font-weight : 300;
-	font-size   : 14px;
-	color       : #999;
-	top         : 14px;
-	left        : 14px;
-	line-height : 14px;
-	cursor      : text;
-
-	&.-selected {
-		top       : -7px;
-		left      : 14px;
-		font-size : 11px;
-		color     : #999;
-	}
-
-	&.-focus {
-		color: #000;
-		font-weight: bold;
-	}
-
-}
-
-//From toolbox
-.input-help.bottom,
-.input-help.bottom-right {
-	top: 35px;
-}
-
-.input-help.top,
-.input-help.top-left {
-	bottom: 70px;
-}
-
-
-/* */
-/*! POPOVER
-/*!---------------------------------------------------*/
-.input-help {
-	display          : none;
-	position         : absolute;
-	z-index          : 999;
-	width            : 240px;
-	padding          : 10px;
-	background-color : @popover-bg;
-	border           : 1px solid @popover-border-color;
-
-	border-radius    : @border-radius-base;
-	.box-shadow(lighten(@gray-lighter, 10%) 0 0 2px 2px);
-
-	ul {
-		margin  : 5px;
-		padding : 0;
-
-		li {
-			font-size : @font-size-small;
-		}
-	}
-
-	.arrow,
-	.arrow:after {
-		position     : absolute;
-		display      : block;
-		width        : 0;
-		height       : 0;
-		border-color : transparent;
-		border-style : solid;
-	}
-
-	.arrow {
-		border-width : @popover-arrow-outer-width;
-	}
-
-	.arrow:after {
-		border-width : @popover-arrow-width;
-		content      : "";
-	}
-
-	&.top {
-		bottom : 60px;
-		right  : 5px;
-
-		.arrow {
-			right               : 20px;
-			border-bottom-width : 0;
-			border-top-color    : #999999;
-			// IE8 fallback
-			border-top-color    : @popover-arrow-outer-color;
-			bottom              : -@popover-arrow-outer-width;
-
-			&:after {
-				bottom              : 1px;
-				margin-left         : -@popover-arrow-width;
-				border-bottom-width : 0;
-				border-top-color    : @popover-arrow-color;
-			}
-		}
-	}
-
-	&.top-left {
-		bottom : 60px;
-		left   : 5px;
-
-		&.-dropdown {
-			bottom : 42px;
-			left   : 0;
-		}
-
-		.arrow {
-			left                : 20px;
-			border-bottom-width : 0;
-			border-top-color    : #999999;
-			// IE8 fallback
-			border-top-color    : @popover-arrow-outer-color;
-			bottom              : -@popover-arrow-outer-width;
-
-			&:after {
-				bottom              : 1px;
-				margin-left         : -@popover-arrow-width;
-				border-bottom-width : 0;
-				border-top-color    : @popover-arrow-color;
-			}
-		}
-	}
-
-	&.bottom {
-		top : 42px;
-
-		.arrow {
-			left                : 20px;
-			//margin-left: -@popover-arrow-outer-width;
-			border-top-width    : 0;
-			border-bottom-color : #999999;
-			// IE8 fallback
-			border-bottom-color : @popover-arrow-outer-color;
-			top                 : -@popover-arrow-outer-width;
-			&:after {
-				top                 : 1px;
-				margin-left         : -@popover-arrow-width;
-				border-top-width    : 0;
-				border-bottom-color : @popover-arrow-color;
-			}
-		}
-	}
-
-	&.bottom-right {
-		top   : 42px;
-		right : 5px;
-
-		.arrow {
-			right               : 20px;
-			//margin-left: -@popover-arrow-outer-width;
-			border-top-width    : 0;
-			border-bottom-color : #999999;
-			// IE8 fallback
-			border-bottom-color : @popover-arrow-outer-color;
-			top                 : -@popover-arrow-outer-width;
-			&:after {
-				top                 : 1px;
-				margin-left         : -@popover-arrow-width;
-				border-top-width    : 0;
-				border-bottom-color : @popover-arrow-color;
-			}
-		}
-	}
-}
-
-.input-help h4 {
-	margin      : 0;
-	padding     : 0;
-	font-family : @font-family-sans-serif;
-	font-weight : bold;
-	font-size   : @font-size-small;
-	text-align  : left;
-}
-
-/* Always hide the input help when it's pristine */
-input.ng-pristine + .input-help {
-	display : none;
-}
-
-/* Show green border when stuff has been typed in, and its valid */
-.ng-dirty.ng-valid {
-	/*border-color:#3a7d34;*/
-}
-
-/* Show red border when stuff has been typed in, but its invalid. Only after the first blur. */
-.ng-touched.ng-dirty.ng-invalid {
-	border-color : #EC3F41;
-	border-width : 2px;
-}
-
-/* Show the help box once it has focus */
-.immediate-help:focus + .input-help {
-	display : block;
-}
-
-.immediate-help.ng-valid:focus + .input-help {
-	display : none;
-}
-
-/* Immediate help should be red when pristine */
-.immediate-help.ng-pristine:focus + .input-help {
-	/*border-color:#ec3f41;*/
-}
-
-.immediate-help.ng-pristine:focus + .input-help::before {
-	/*color:#ec3f41;*/
-}
-
-/* Help hould be green when input is valid */
-.ng-valid + .input-help {
-	/*border-color:#3a7d34;*/
-}
-
-.ng-valid + .input-help::before {
-	/*color:#3a7d34;*/
-}
-
-/* Help should show and be red when invalid */
-.ng-invalid + .input-help {
-	/*border-color: #ec3f41;*/
-
-	/*Change following row block for debugging input-help element*/
-	display: none;
-}
-
-.ng-invalid + .input-help::before {
-	/*color: #ec3f41;*/
-}
-
-/* Style input help requirement bullets */
-.input-help ul {
-	list-style : none;
-	margin     : 10px 0 0 0;
-}
-
-/* Default each bullet to be invalid with a red cross and text */
-.input-help li {
-	padding-left : 22px;
-	line-height  : 24px;
-	color        : #EC3F41;
-	font-family  : @font-family-sans-serif;
-	font-weight  : normal;
-	font-size    : @font-size-small;
-	text-align   : left;
-}
-
-/* Set to green check and text when valid */
-.input-help li.valid {
-	color               : #3A7D34;
-	background-position : 2px 6px;
-}
-
-.vn-qty-counter{
-
-	&__btn{
-
-		&:first-child > .btn{
-			margin-right: -2px;
-		}
-		
-		&--less{
-
-		}
-		&--more{
-
-		}
-	}
-	&__input{
-		text-align: center;
-		padding: 5px;
-	}
-}
-
-.vn-spinner{
-	position         : absolute;
-	z-index          : 9999;
-	top              : 0;
-	left             : 0;
-	width            : 100%;
-	height           : 100%;
-	background-color : @btn-default-bg;
-	text-align       : center;
-	.opacity(0.8);
-
-	&__inner {
-		position    : absolute;
-		top         : 50%;
-		left        : 50%;
-		height      : 80px;
-		width       : 80px;
-		margin-top  : -40px;
-		margin-left : -40px;
-	}
-
-	svg path,
-	svg rect {
-		fill : @btn-default-color;
-	}
-}
-
-.vn-dropdown{
-	position : relative;
-
-	&__trigger{
-
-	}
-	&__menu.dropdown-menu{
-		width       : 100%;
-		min-width   : 180px;
-		max-height  : 150px;
-		overflow-y  : auto;
-		padding     : 8px;
-
-		> li{
-
-			> a{
-				padding-left  : 5px;
-				padding-right : 5px;
-
-				@media (max-width: @screen-md){
-					padding-top    : 8px;
-					padding-bottom : 8px;
-				}
-			}
-		}
-	}
-	&__select{
-		display : none;
-		height  : 1px;
-		width   : 1px;
-	}
-
-	.vn-placeholder{
-		cursor: pointer;
-	}
-}
-
 //Used for address display, pickers, and editors
 
 .th-address {
@@ -2107,5 +1409,703 @@ input.ng-pristine + .input-help {
 		font-weight   : 400;
 		font-size     : 15px;
 		line-height   : 20px;
+	}
+}
+
+.vn-app-message{
+
+	&--fixed{
+		position: fixed;
+		top: 100px;
+		z-index: 9999;
+		left: 50%;
+		margin-left: -200px;
+		width: 400px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+	}
+	&--static{
+		position: static;
+	}
+
+	&__text{
+		line-height: 26px;
+	}
+	&__button{
+
+	}
+	@media (max-width: @screen-xs){
+		left: 0;
+		margin-left: 6%;
+		width: 90%;
+
+		&__text{
+
+		}
+		&__button{
+
+		}
+	}
+}
+
+.th-dropdown {
+
+	.vn-placeholder {
+		margin-left: -10px;
+	}
+
+	.btn {
+		text-align: left;
+	}
+
+	&-toggle {
+		margin-left : 5px;
+		margin-top  : -3px;
+	}
+
+	.dropdown-toggle{
+		text-align: left;
+		text-transform: uppercase;
+	}
+}
+
+.th-dropdown.open {
+	button.btn-default.dropdown-toggle {
+		background: none;
+	}
+}
+
+.th-my-account,
+.th-checkout{
+
+  .list-group{
+	margin        : 10px 0px 10px 0px;
+	border-radius : 2px;
+	box-shadow    : 0px 3px 1px -2px rgba(0,0,0,0.1),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+
+	.list-group-item{
+		background-color: @body-bg;
+		padding      : 20px;
+		margin-left  : 0;
+		margin-right : 0;
+		border       : 1px solid darken(@body-bg, 8%);
+		color        : @text-color;
+
+		[data-vn-address-display]{
+			cursor: default;
+		}
+
+		&.-clickable{
+			color: @link-color;
+
+			&:hover{
+				cursor: pointer;
+				background-color: darken(@body-bg, 4%);
+			}
+		}
+	}
+
+	  .panel-heading{
+		  border-bottom: 0;
+	  }
+
+		//For select lists
+		.list-group-item.-radio{
+
+	  &:hover{
+		cursor: pointer;
+		  background-color: darken(@body-bg, 4%);
+	  }
+
+			.row{
+				padding-left: 30px;
+			}
+
+			input{
+				display: none;
+
+				&:checked {
+					+ div {
+						&:before {
+							content     : '\f192';
+							font-family : 'FontAwesome';
+						}
+					}
+				}
+			}
+
+			> div{
+
+				&:before {
+					content        : '\f10c';
+					font-family    : 'FontAwesome';
+					font-size      : 16px;
+					display        : inline-block;
+					line-height    : 18px;
+					vertical-align : middle;
+					text-align     : center;
+					color          : #000;
+					margin-right   : 5px;
+					font-weight    : normal;
+					position       : absolute;
+					top            : 50%;
+					margin-top     : -9px;
+				}
+			}
+		}
+
+	}
+}
+
+.th-modal{
+	position: relative;
+
+	.th-modal__button{
+		font-size : 14px;
+		width     : 100%;
+		margin    : 5px 0;
+
+		&--primary{
+
+		}
+		&--secondary{
+
+		}
+	}
+
+	&__message{
+		font-size     : 14px;
+		margin-bottom : 5px;
+	}
+
+	&__body{
+		padding-top: 10px;
+	}
+
+	&__close{
+		position  : absolute;
+		top       : 7px;
+		right     : 10px;
+		z-index   : 1;
+		font-size : 22px;
+	}
+
+	.modal-header{
+		padding: 0px;
+	}
+	.modal-body{
+		padding: 25px 25px 10px 25px;
+	}
+	.modal-footer{
+		padding: 10px 20px;
+	}
+}
+
+.login-modal{
+	.modal-header{
+		text-align: center;
+
+		.close{
+			font-size: 30px;
+		}
+	}
+	.modal-dialog{
+		@media (min-width: @screen-sm){
+			width: 400px;
+		}
+	}
+	.modal-title{
+		font-size      : 28px;
+		text-transform : uppercase;
+	}
+	.modal-content{
+		-moz-box-shadow    : 0 3px 9px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow : 0 3px 9px rgba(0, 0, 0, 0.2);
+		box-shadow         : 0 3px 9px rgba(0, 0, 0, 0.2);
+	}
+	.th-login{
+		margin: 0px 15px 50px 15px;
+	}
+}
+
+.sign-up-modal{
+	.modal-header{
+		text-align: center;
+
+		.close{
+			font-size: 30px;
+		}
+	}
+	.modal-dialog{
+		@media (min-width: @screen-sm){
+			width: 500px;
+		}
+	}
+	.modal-title{
+		font-size      : 25px;
+		text-transform : uppercase;
+	}
+	.modal-content{
+		-moz-box-shadow    : 0 3px 9px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow : 0 3px 9px rgba(0, 0, 0, 0.2);
+		box-shadow         : 0 3px 9px rgba(0, 0, 0, 0.2);
+	}
+	.modal-footer{
+		margin  : 0;
+		padding : 15px 20px;
+
+		.btn{
+			font-size: 14px;
+		}
+
+		&-left{
+			margin: 0px;
+		}
+	}
+	.form-group{
+		position: relative;
+
+		label{
+			left: 0;
+		}
+	}
+	.vn-rating{
+		line-height   : 1.3;
+		font-size     : 16px;
+		margin-bottom : 20px;
+	}
+	.th-login{
+		margin: 25px 40px 50px 40px;
+
+		&__form{
+			margin: 0px;
+		}
+	}
+}
+
+.write-review-modal{
+	.modal-header{
+		text-align: center;
+
+		.close{
+			font-size: 30px;
+		}
+	}
+	.modal-dialog{
+		@media (min-width: @screen-sm){
+			width: 500px;
+		}
+	}
+	.modal-title{
+		font-size      : 20px;
+		line-height: 1.3;
+		text-transform : uppercase;
+	}
+	.modal-content{
+		-moz-box-shadow    : 0 3px 9px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow : 0 3px 9px rgba(0, 0, 0, 0.2);
+		box-shadow         : 0 3px 9px rgba(0, 0, 0, 0.2);
+	}
+	.modal-footer{
+		margin  : 0;
+		padding : 15px 20px;
+
+		.btn{
+			font-size: 14px;
+		}
+
+		&-left{
+			margin: 0px;
+		}
+	}
+	.form-group{
+		position: relative;
+
+		label{
+			left: 0;
+		}
+	}
+	.vn-rating{
+		line-height   : 1.3;
+		font-size     : 16px;
+		margin-bottom : 20px;
+	}
+}
+
+.th-my-account,
+.th-checkout,
+.th-checkout__thanks,
+.th-order-detail{
+
+	.panel{
+		margin        : 20px 0;
+		border        : 1px solid darken(@body-bg, 10%);
+		border-radius : 2px;
+		box-shadow    : 0px 3px 1px -2px rgba(0, 0, 0, 0.1), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+		&-heading{
+			font-weight    : 500;
+			font-size      : 18px;
+			padding        : 15px 20px;
+			border-bottom  : 1px solid darken(@body-bg, 8%);
+			background-color: darken(@body-bg, 4);
+			color: @headings-color;
+			margin: 0;
+		}
+
+		&-body{
+			padding: 20px;
+			margin: 0;
+			background-color: @body-bg;
+		}
+
+		&-footer{
+			background-color: darken(@body-bg, 4);
+			color: @text-color;
+			border-top  : 1px solid darken(@body-bg, 8%);
+		}
+	}
+}
+
+.vn-placeholder {
+	.transition-property(font-size top);
+	.transition-duration(.2s);
+	.transition-timing-function(ease);
+
+	position    : absolute;
+	font-weight : 300;
+	font-size   : 14px;
+	color       : #999;
+	top         : 14px;
+	left        : 14px;
+	line-height : 14px;
+	cursor      : text;
+
+	&.-selected {
+		top       : -7px;
+		left      : 14px;
+		font-size : 11px;
+		color     : #999;
+	}
+
+	&.-focus {
+		color: #000;
+		font-weight: bold;
+	}
+
+}
+
+//From toolbox
+.input-help.bottom,
+.input-help.bottom-right {
+	top: 35px;
+}
+
+.input-help.top,
+.input-help.top-left {
+	bottom: 70px;
+}
+
+
+/* */
+/*! POPOVER
+/*!---------------------------------------------------*/
+.input-help {
+	display          : none;
+	position         : absolute;
+	z-index          : 999;
+	width            : 240px;
+	padding          : 10px;
+	background-color : @popover-bg;
+	border           : 1px solid @popover-border-color;
+
+	border-radius    : @border-radius-base;
+	.box-shadow(lighten(@gray-lighter, 10%) 0 0 2px 2px);
+
+	ul {
+		margin  : 5px;
+		padding : 0;
+
+		li {
+			font-size : @font-size-small;
+		}
+	}
+
+	.arrow,
+	.arrow:after {
+		position     : absolute;
+		display      : block;
+		width        : 0;
+		height       : 0;
+		border-color : transparent;
+		border-style : solid;
+	}
+
+	.arrow {
+		border-width : @popover-arrow-outer-width;
+	}
+
+	.arrow:after {
+		border-width : @popover-arrow-width;
+		content      : "";
+	}
+
+	&.top {
+		bottom : 60px;
+		right  : 5px;
+
+		.arrow {
+			right               : 20px;
+			border-bottom-width : 0;
+			border-top-color    : #999999;
+			// IE8 fallback
+			border-top-color    : @popover-arrow-outer-color;
+			bottom              : -@popover-arrow-outer-width;
+
+			&:after {
+				bottom              : 1px;
+				margin-left         : -@popover-arrow-width;
+				border-bottom-width : 0;
+				border-top-color    : @popover-arrow-color;
+			}
+		}
+	}
+
+	&.top-left {
+		bottom : 60px;
+		left   : 5px;
+
+		&.-dropdown {
+			bottom : 42px;
+			left   : 0;
+		}
+
+		.arrow {
+			left                : 20px;
+			border-bottom-width : 0;
+			border-top-color    : #999999;
+			// IE8 fallback
+			border-top-color    : @popover-arrow-outer-color;
+			bottom              : -@popover-arrow-outer-width;
+
+			&:after {
+				bottom              : 1px;
+				margin-left         : -@popover-arrow-width;
+				border-bottom-width : 0;
+				border-top-color    : @popover-arrow-color;
+			}
+		}
+	}
+
+	&.bottom {
+		top : 42px;
+
+		.arrow {
+			left                : 20px;
+			//margin-left: -@popover-arrow-outer-width;
+			border-top-width    : 0;
+			border-bottom-color : #999999;
+			// IE8 fallback
+			border-bottom-color : @popover-arrow-outer-color;
+			top                 : -@popover-arrow-outer-width;
+			&:after {
+				top                 : 1px;
+				margin-left         : -@popover-arrow-width;
+				border-top-width    : 0;
+				border-bottom-color : @popover-arrow-color;
+			}
+		}
+	}
+
+	&.bottom-right {
+		top   : 42px;
+		right : 5px;
+
+		.arrow {
+			right               : 20px;
+			//margin-left: -@popover-arrow-outer-width;
+			border-top-width    : 0;
+			border-bottom-color : #999999;
+			// IE8 fallback
+			border-bottom-color : @popover-arrow-outer-color;
+			top                 : -@popover-arrow-outer-width;
+			&:after {
+				top                 : 1px;
+				margin-left         : -@popover-arrow-width;
+				border-top-width    : 0;
+				border-bottom-color : @popover-arrow-color;
+			}
+		}
+	}
+}
+
+.input-help h4 {
+	margin      : 0;
+	padding     : 0;
+	font-family : @font-family-sans-serif;
+	font-weight : bold;
+	font-size   : @font-size-small;
+	text-align  : left;
+}
+
+/* Always hide the input help when it's pristine */
+input.ng-pristine + .input-help {
+	display : none;
+}
+
+/* Show green border when stuff has been typed in, and its valid */
+.ng-dirty.ng-valid {
+	/*border-color:#3a7d34;*/
+}
+
+/* Show red border when stuff has been typed in, but its invalid. Only after the first blur. */
+.ng-touched.ng-dirty.ng-invalid {
+	border-color : #EC3F41;
+	border-width : 2px;
+}
+
+/* Show the help box once it has focus */
+.immediate-help:focus + .input-help {
+	display : block;
+}
+
+.immediate-help.ng-valid:focus + .input-help {
+	display : none;
+}
+
+/* Immediate help should be red when pristine */
+.immediate-help.ng-pristine:focus + .input-help {
+	/*border-color:#ec3f41;*/
+}
+
+.immediate-help.ng-pristine:focus + .input-help::before {
+	/*color:#ec3f41;*/
+}
+
+/* Help hould be green when input is valid */
+.ng-valid + .input-help {
+	/*border-color:#3a7d34;*/
+}
+
+.ng-valid + .input-help::before {
+	/*color:#3a7d34;*/
+}
+
+/* Help should show and be red when invalid */
+.ng-invalid + .input-help {
+	/*border-color: #ec3f41;*/
+
+	/*Change following row block for debugging input-help element*/
+	display: none;
+}
+
+.ng-invalid + .input-help::before {
+	/*color: #ec3f41;*/
+}
+
+/* Style input help requirement bullets */
+.input-help ul {
+	list-style : none;
+	margin     : 10px 0 0 0;
+}
+
+/* Default each bullet to be invalid with a red cross and text */
+.input-help li {
+	padding-left : 22px;
+	line-height  : 24px;
+	color        : #EC3F41;
+	font-family  : @font-family-sans-serif;
+	font-weight  : normal;
+	font-size    : @font-size-small;
+	text-align   : left;
+}
+
+/* Set to green check and text when valid */
+.input-help li.valid {
+	color               : #3A7D34;
+	background-position : 2px 6px;
+}
+
+.vn-qty-counter{
+
+	&__btn{
+
+		&:first-child > .btn{
+			margin-right: -2px;
+		}
+		
+		&--less{
+
+		}
+		&--more{
+
+		}
+	}
+	&__input{
+		text-align: center;
+		padding: 5px;
+	}
+}
+
+.vn-spinner{
+	position         : absolute;
+	z-index          : 9999;
+	top              : 0;
+	left             : 0;
+	width            : 100%;
+	height           : 100%;
+	background-color : @btn-default-bg;
+	text-align       : center;
+	.opacity(0.8);
+
+	&__inner {
+		position    : absolute;
+		top         : 50%;
+		left        : 50%;
+		height      : 80px;
+		width       : 80px;
+		margin-top  : -40px;
+		margin-left : -40px;
+	}
+
+	svg path,
+	svg rect {
+		fill : @btn-default-color;
+	}
+}
+
+.vn-dropdown{
+	position : relative;
+
+	&__trigger{
+
+	}
+	&__menu.dropdown-menu{
+		width       : 100%;
+		min-width   : 180px;
+		max-height  : 150px;
+		overflow-y  : auto;
+		padding     : 8px;
+
+		> li{
+
+			> a{
+				padding-left  : 5px;
+				padding-right : 5px;
+
+				@media (max-width: @screen-md){
+					padding-top    : 8px;
+					padding-bottom : 8px;
+				}
+			}
+		}
+	}
+	&__select{
+		display : none;
+		height  : 1px;
+		width   : 1px;
+	}
+
+	.vn-placeholder{
+		cursor: pointer;
 	}
 }
