@@ -1,0 +1,63 @@
+{
+  "name": "vnext-checkout",
+  "version": "0.0.1",
+  "author": "Volusion",
+  "main": [
+    "dist/vnext.checkout.js",
+    "dist/vnext.checkout.templates.js",
+    "dist/vnext.checkout.less"
+  ],
+  "description": "The checkout application used in vnext themes",
+  "keywords": [
+    "Volusion",
+    "Checkout"
+  ],
+  "ignore": [
+    "**/.*",
+    "test",
+    "Gemfile",
+    "Gruntfile.js",
+    "karma*.js",
+    "protractor.conf.js",
+    "package.json",
+    "*.sln*"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.3.0",
+    "angular-ui-bootstrap-bower": "~0.12.0",
+    "ng-lodash": "~0.1.0",
+    "angular-aria": "~1.3.13",
+    "vnext-components": "git@github.com:volusion-angular/vnext-components.git#develop",
+    "vNextSDK": "git@github.com:volusion-angular/vNextSDK.git",
+    "bootstrap": "~3.3.5",
+    "angular-cookies": "~1.4.3",
+    "angular-sanitize": "~1.4.3",
+    "angular-route": "~1.4.3",
+    "angular": "~1.4.3",
+    "angular-resource": "~1.4.3"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.4.3",
+    "karma": "~0.4.6",
+    "jasmine": "~2.2.1",
+    "angular-sanitize": "~1.4.3",
+    "angular-route": "~1.4.3"
+  },
+  "resolutions": {
+    "angular": "~1.4.3",
+    "angular-aria": "~1.4.0",
+    "angular-cookies": "~1.4.3",
+    "angular-mocks": "~1.4.3",
+    "angular-ui-bootstrap-bower": "~0.13.0",
+    "ng-lodash": "~0.2.3",
+    "angular-breadcrumb": "~0.4.0",
+    "angular-translate-handler-log": "~2.7.2",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-partial": "~2.7.2",
+    "angular-translate-interpolation-messageformat": "~2.7.2",
+    "angular-translate-storage-cookie": "~2.7.2",
+    "angular-translate-storage-local": "~2.7.2",
+    "easyzoom": "~2.3.0",
+    "js-data": "~2.3.0"
+  }
+}
