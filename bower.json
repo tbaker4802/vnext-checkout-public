@@ -1,6 +1,6 @@
 {
   "name": "vnext-checkout",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Volusion",
   "main": [
     "vnext.checkout.js",
