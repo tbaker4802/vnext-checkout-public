@@ -1,11 +1,11 @@
 {
   "name": "vnext-checkout",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "Volusion",
   "main": [
     "vnext.checkout.js",
     "vnext.checkout.templates.js",
-    "vnext.checkout.less"
+    "vnext.checkout.css"
   ],
   "description": "The checkout application used in vnext themes",
   "keywords": [
