@@ -1,6 +1,6 @@
 {
   "name": "vnext-checkout",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "author": "Volusion",
   "main": [
     "vnext.checkout.js",
@@ -17,7 +17,7 @@
     "angular-ui-bootstrap-bower": "~0.12.0",
     "ng-lodash": "~0.1.0",
     "angular-aria": "~1.3.13",
-    "vnext-components": "~0.0.19",
+    "vnext-components": "git@github.com:volusion-angular/vnext-components.git#develop",
     "bootstrap": "~3.3.5",
     "angular-cookies": "~1.4.3",
     "angular-sanitize": "~1.4.3",
