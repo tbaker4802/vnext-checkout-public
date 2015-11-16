@@ -1,6 +1,6 @@
 {
   "name": "vnext-checkout",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "author": "Volusion",
   "main": [
     "vnext.checkout.js",
@@ -24,8 +24,8 @@
     "angular-route": "~1.4.7",
     "angular": "~1.4.7",
     "angular-resource": "~1.4.7",
-    "vNextSDK": "~0.0.17",
+    "vNextSDK": "~0.0.13",
     "ngToast": "ngtoast#~1.5.6",
-    "material-analytics": "~0.0.12"
+    "material-analytics": "~0.0.11"
   }
 }
